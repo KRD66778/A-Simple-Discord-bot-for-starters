@@ -28,10 +28,6 @@ client.on("ready", () => {
   console.log(client.user.username)
 })
 
-client.on('ready', () => {
- client.user.setActivity('My prefix is ${prefix} ', { type: 'WATCHING' })
-})
-
 client.on("ready", () => {
     client.user.setStatus("online");
 });
@@ -51,9 +47,10 @@ client.on("messageCreate", async message => {
     message.channel.send("Pong") //the bot will reply pong
     message.react('😉') //and this is not necessary this is just for reacts (not necessary between)
     
+          //IMPORTANT- You have to do some changes in package.json also like edit the name there
     
     
     })
-    client.login(process.env.token)  //IMPORTANT as you can see its written as token in small letters so if your repl is public then go to secrets and create a secret named token and in the value paste your bot token!
+    client.login(process.env.token)  //IMPORTANT- As you can see its written as token in small letters so if your repl is public then go to secrets and create a secret named token and in the value paste your bot token!
   
   //also if your repl is private then just remove the login code and paste client.login("your token here")
