@@ -11,6 +11,7 @@ app.listen(3000, () => {
   console.log("Bot is logged in as")
 })
 
+//also join my discord https://discord.gg/avFmqYUPdq
 
 const Discord= require("discord.js")
 const client = new Discord.Client({ intents: ["GUILDS", "GUILD_MESSAGES"] })
