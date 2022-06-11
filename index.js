@@ -13,17 +13,22 @@ app.listen(3000, () => {
 
 //also join my discord https://discord.gg/avFmqYUPdq
 
+//------------------------------------------------------------------------------------------------
 const Discord= require("discord.js")
 const client = new Discord.Client({ intents: ["GUILDS", "GUILD_MESSAGES"] })
 const fs = require("fs");
-const prefix = "(your bot prefix here)"
+const prefix = "(?)"
 client.commands = new Discord.Collection();
 const commands = fs.readdirSync("./Commands").filter(file => file.endsWith(".js"))
 for(file of commands) {
   const commandName = file.split(".")[0]
   const command = require(`./Commands/${commandName}`)
   client.commands.set(commandName, command)
-}
+} 
+//------------------------------------------------------------------------------------------------
+//You can remove the above code if you are dont want to use Command Handler, Btw i will make video on a command handler discord bot also :>
+//sub to my youtube (Exact Gamer)!
+//also join my discord!
 
 client.on("ready", () => {
   console.log(client.user.username)
