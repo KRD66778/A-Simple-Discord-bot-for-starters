@@ -6,4 +6,4 @@ Link here- [Join Now](https://discord.gg/avFmqYUPdq)
 if anyone not helping you there then create a ticket and ping me there !
 
 
-Thanks for visiting my Github Please star or no help ez
+Thanks for visiting my Github,  Please star or no help ez!
